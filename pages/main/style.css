@@ -177,3 +177,71 @@ header {
         height: 593px;
     }
 }
+
+
+/* section-two */ 
+
+.section-two {
+    width: 1280px;
+    height: 588px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section-two-img {
+    width: 300px;
+    height: 408px;
+}
+
+.section-two-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-two-text {
+    width: 430px;
+    height: 308px;
+}
+
+.two-text-h2 {
+    width: 370px;
+    height: 90px;
+}
+
+.two-text-h2 h2 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.two-text-p-one {
+    width: 430px;
+    height: 96px;
+
+}
+
+.two-text-p-two {
+    margin-top: 25px;
+    width: 430px;
+    height: 114px;
+}
+
+.here {
+    font-weight: 400;
+    font-size: 15;
+    line-height: 24px;
+    color: #4C4C4C;
+}
+
+@media (max-width: 770px) {
+    .section-two {
+        width: 768px;
+        height: 1048px;
+        flex-direction: column-reverse;
+    }
+}
