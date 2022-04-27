@@ -13,47 +13,49 @@ body {
 
 main {
     width: 1280px;
-    background-color: gray;
 }
 
-/* section-one */ 
-
 .section-one {
-    width: 1280px;
+    background-image: url("../../assets/images/start-screen-gradient-background.jpg");
     height: 908px;
-    background-image: url('../../assets/images/start-screen-gradient-background.jpg');
-    display: grid;
-    grid-template-columns: repeat(1, 1200px);
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 header {
+    width: 1200px;
     height: 60px;
-    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
 }
 
 .logo {
     width: 184px;
     height: 60px;
 }
-
 .logo h1 {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
     font-size: 32px;
-    list-style: 35px;
-    letter-spacing: 6%;
+    line-height: 35px;
+    font-weight: 400;
     color: #F1CDB3;
-
 }
 
 .logo p {
-    color: #FFFFFF;
-    letter-spacing: 0.1em;
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
 }
 
 .navigation {
@@ -61,37 +63,47 @@ header {
     height: 27px;
     display: flex;
     align-items: center;
-}
 
+}
 .navigation nav {
+    display: flex;
     width: 100%;
+
+
 }
 
 .navigation nav ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.navigation nav ul a {
-    color: #CDCDCD;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+.navigation nav ul li {
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
-    line-height: 160%;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-.navigation nav ul a:hover {
+.navigation nav ul li a {
+    color : #CDCDCD;
+
+}
+
+.navigation nav ul li a:hover {
     color: #FAFAFA;
-    border-bottom: 1px solid #F1CDB3;
+    border-bottom: 2px solid #F1CDB3;
 }
 
 .section-one-puppy {
+    width: 1200px;
     height: 728px;
-    margin-top: 60px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 .section-one-puppt-one {
@@ -104,58 +116,64 @@ header {
     height: 114px;
 }
 
-
-
 .puppy-h2 h2 {
     font-size: 44px;
+    font-weight: 400;
     line-height: 57px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .puppy-p {
-    margin-top: 42px;
+    width: 460px;
+    height: 72px;
+    margin: 42px 0;
 }
 
 .puppy-p p {
-    color: #CDCDCD;
     font-size: 15px;
-    line-height: 24px;
     font-weight: 400;
-    
+    line-height: 24px;
+    color: #CDCDCD;
 }
 
-.puppy-btn {
-    margin-top: 43px;
+.puppy-btn button {
     width: 207px;
     height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.puppy-btn button  {
-    border: none;
     background-color: #F1CDB3;
+    border: none;
     border-radius: 100px;
-    padding: 15px 45px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-    color: #292929;
 }
-
-.puppy-btn button:hover {
-    background-color: #FDDCC4;
-}
-
 
 .section-one-puppt-two {
     width: 698px;
     height: 728px;
-    background-image: url("../../assets/images/start-screen-puppy.png");
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+}
+
+.section-one-puppt-two img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 770px) {
+    main {
+        width: 768px;
+    }
+    .section-one {
+        width: 768px;
+        height: 1165px;
+    }
+    header {
+        width: 708px;
+        margin-top: 30px;
+    }
+    .section-one-puppy {
+        flex-direction: column;
+        height: 1015px;
+        width: 768px;
+    }
+    .section-one-puppt-two {
+        width: 569px;
+        height: 593px;
+    }
 }
