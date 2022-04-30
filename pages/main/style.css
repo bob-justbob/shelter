@@ -9,10 +9,13 @@
 body {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 main {
     width: 1280px;
+    height: 100%;
+    position: relative;
 }
 
 .section-one {
@@ -97,6 +100,10 @@ header {
     border-bottom: 2px solid #F1CDB3;
 }
 
+nav ul li:nth-child(1) {
+    border-bottom: 2px solid #F1CDB3 ;
+}
+
 .section-one-puppy {
     width: 1200px;
     height: 728px;
@@ -142,6 +149,8 @@ header {
     background-color: #F1CDB3;
     border: none;
     border-radius: 100px;
+    cursor: pointer;
+
 }
 
 .section-one-puppt-two {
@@ -314,6 +323,11 @@ header {
     height: 435px;
     background: #F6F6F6;
 }
+
+.card:hover {
+    padding: 15px;
+    cursor: pointer;
+}
 .card img {
     width: 100%;
 }
@@ -366,6 +380,7 @@ header {
     height: 52px;
     border: 2px solid #F1CDB3;;
     border-radius: 100px;
+    cursor: pointer;
 
 }
 
@@ -382,6 +397,7 @@ header {
     height: 52px;
     border: 2px solid #F1CDB3;;
     border-radius: 100px;
+    cursor: pointer;
 
 }
 
@@ -399,6 +415,11 @@ header {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.06em;
+    color: #292929;
+    cursor: pointer;
+}
+
+.section-three-button button a {
     color: #292929;
 }
 
@@ -814,3 +835,36 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+/* .modal-containter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.6);;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 900px;
+    height: 500px;
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: -5vh;
+    top: -5vh;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

@@ -25,3 +25,7 @@ rightArrow.addEventListener('click',()=>{
   cardWrap.style.transform= 'translate('+(counter) *  -16.5 +'%)';
 })
 
+function btnOurFriends(e){
+    window.location.hash="ourFriends";
+    console.log("rame")
+}
