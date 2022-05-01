@@ -6,6 +6,41 @@
     text-decoration: none;
 }
 
+@font-face {
+	font-family: 'Georgia';
+	src: url('../../assets/fonts/georgia.ttf');
+	src: local('Georgia Regular'), local('Georgia-Regular'),
+		url('../../assets/fonts/georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('../../assets/fonts/arial.ttf');
+	src: local('Arial Regular'), local('Arial-Regular'),
+		url('../../assets/fonts/arial.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+h3  {
+    font-family: 'Georgia';
+    font-style: normal; 
+}
+
+p {
+    font-family: 'Arial';
+    font-style: italic;
+}
+
+h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -118,12 +153,12 @@ nav ul li:nth-child(1) {
     height: 322px;
 }
 
-.puppy-h2 {
+.puppy-h3 {
     width: 310px;
     height: 114px;
 }
 
-.puppy-h2 h2 {
+.puppy-h3 h3 {
     font-size: 44px;
     font-weight: 400;
     line-height: 57px;
