@@ -302,6 +302,7 @@ footer {
     background-color: #513D2F;
     display: flex;
     justify-content: center;
+    
 }
 
 .footer-box {
@@ -311,6 +312,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .footer-box-one {
