@@ -183,6 +183,22 @@ main {
 
 }
 
+/* .grid-card:hover {
+    cursor: pointer;
+} */
+
+.grid-card:hover .grid-card-btn button{
+
+    background-color: #FDDCC4;
+
+    cursor: pointer;
+
+}
+.grid-card:hover {
+    cursor: pointer;
+}
+
+
 .grid-card-img {
     width: 270px;
     height: 270px;
@@ -224,10 +240,6 @@ main {
     background-color: #ffffff;
 }
 
-.grid-card-btn button:hover {
-    background-color: #FDDCC4;
-    cursor: pointer;
-}
 
 .arrows {
     width: 340px;
