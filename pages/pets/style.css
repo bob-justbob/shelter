@@ -49,12 +49,18 @@ h4 {
 
 header {
     width: 1200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heder {
+    width: 1200px;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    margin-top: 60px;
 }
 
 .logo {
@@ -259,6 +265,8 @@ main {
     align-items: center;
 }
 
+
+
 .arrows-black span {
     display: flex;
     justify-content: center;
@@ -267,8 +275,8 @@ main {
     border-radius: 100px;
     width: 52px;
     height: 52px;
-    cursor: pointer;
-
+    cursor: default;
+    color: #CDCDCD;
 }
 
 .arrows-pimk-ish span {
