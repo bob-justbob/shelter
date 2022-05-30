@@ -234,6 +234,7 @@ main {
         grid-template-columns: repeat(2, 170px);
         justify-content: space-evenly;
         height: auto;
+        width: 768px;
     }
 }
 @media (max-width: 322px) {
@@ -574,5 +575,17 @@ footer {
         width: 320px;
         flex-direction: column;
         gap: 10vw;
+    }
+}
+
+@media (max-width: 320px) {
+    main{
+        width: 320px;
+    }
+    .grid-card {
+        width: 320px;
+    }
+    .container-grid {
+        width: 320px;
     }
 }

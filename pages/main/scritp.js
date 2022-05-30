@@ -6,18 +6,9 @@ let counter = 0;
 const leftArrow = document.querySelector("#prev-Btn");
 const rightArrow = document.querySelector("#next-Btn");
 
-const menuBtn =document.querySelector('.menu-btn')
-const menuOpen = false;
 
-menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-        menuBtn.classList.add('open')
-        menuOpen=  true;
-    } else {
-        menuBtn.classList.remove('open')
-        menuOpen = false;
-    }
-});
+
+
 
 leftArrow.addEventListener("click", ()=>{
     if(counter == 0) {
