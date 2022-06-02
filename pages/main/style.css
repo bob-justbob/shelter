@@ -869,6 +869,8 @@ footer {
     }
     .card-wrap {
         width: 80%;
+        margin: 0 50px;
+
     }
     .hide {
         display: none;
